@@ -1,0 +1,40 @@
+@import url("https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300,300i,700&display=swap");
+.header {
+  background-color: #f7f3f3;
+}
+.header__logo {
+  display: contents;
+  align-items: center;
+  padding: 10px;
+}
+.header__img {
+  width: 30%;
+  margin: 10px;
+  margin-left: 35%;
+}
+.header__text {
+  margin-left: 39%;
+  font-size: 2.5em;
+}
+
+body {
+  background-color: #f7f3f3;
+}
+
+.slide {
+  display: flex;
+}
+.slide__image {
+  width: 650px;
+  height: 300px;
+}
+.slide__text {
+  color: limegreen;
+  margin-left: auto;
+  width: 35%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+/*# sourceMappingURL=app.css.map */
