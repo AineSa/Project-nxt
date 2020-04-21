@@ -29,7 +29,7 @@ class Produtos extends Component {
                      <p className='product--list__text'>Agave pototarum cv variegata
                                <span className='product--list__preco'>R$38.00</span>
                      </p>
-                     <a className='button' href='/obrigado'>
+                     <a className='button' href='/cadastro'>
                         Adicionar ao carrinho
 						   </a>
                   </div>
@@ -41,7 +41,7 @@ class Produtos extends Component {
                      <p className='product--list__text'>Astrophytum myriostigma yoroi
                         <span className='product--list__preco'>R$250.00</span>
                      </p>
-                     <a className='button' href='/obrigado'>
+                     <a className='button' href='/cadastro'>
                         Adicionar ao carrinho
 						   </a>
                   </div>
@@ -53,7 +53,7 @@ class Produtos extends Component {
                      <p className='product--list__text'>Discocactus cephaliaciculosus
                         <span className='product--list__preco'>R$38.00</span>
                      </p>
-                     <a className='button' href='/obrigado'>
+                     <a className='button' href='/cadastro'>
                         Adicionar ao carrinho
 						   </a>
                   </div>
@@ -65,7 +65,7 @@ class Produtos extends Component {
                      <p className='product--list__text'>Discocactus latispinus
                         <span className='product--list__preco'>R$38.00</span>
                      </p>
-                     <a className='button' href='/obrigado'>
+                     <a className='button' href='/cadastro'>
                         Adicionar ao carrinho
 						   </a>
                   </div>
@@ -77,7 +77,7 @@ class Produtos extends Component {
                      <p className='product--list__text'>Euphorbia Meloformis
                         <span className='product--list__preco'>R$135.00</span>
                      </p>
-                     <a className='button' href='/obrigado'>
+                     <a className='button' href='/cadastro'>
                         Adicionar ao carrinho
 						   </a>
                   </div>
@@ -89,7 +89,7 @@ class Produtos extends Component {
                      <p className='product--list__text'>Frailea Mammifera
                         <span className='product--list__preco'>R$20.00</span>
                      </p>
-                     <a className='button' href='/obrigado'>
+                     <a className='button' href='/cadastro'>
                         Adicionar ao carrinho
 						   </a>
                   </div>
@@ -101,7 +101,7 @@ class Produtos extends Component {
                      <p className='product--list__text'>Mammillaria bombycina
                         <span className='product--list__preco'>R$39.00</span>
                      </p>
-                     <a className='button' href='/obrigado'>
+                     <a className='button' href='/cadastro'>
                         Adicionar ao carrinho
 						   </a>
                   </div>
@@ -113,7 +113,7 @@ class Produtos extends Component {
                      <p className='product--list__text'>Stenocactus phyllacanthus
                         <span className='product--list__preco'>R$120.00</span>
                      </p>
-                     <a className='button' href='/obrigado'>
+                     <a className='button' href='/cadastro'>
                         Adicionar ao carrinho
 						   </a>
                   </div>
@@ -125,7 +125,7 @@ class Produtos extends Component {
                      <p className='product--list__text'>Thelocactus setispinus
                         <span className='product--list__preco'>R$35.00</span>
                      </p>
-                     <a className='button' href='/obrigado'>
+                     <a className='button' href='/cadastro'>
                         Adicionar ao carrinho
 						   </a>
                   </div>

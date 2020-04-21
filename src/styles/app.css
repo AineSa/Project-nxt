@@ -71,6 +71,22 @@
   width: 450px;
 }
 
+.info__pessoais {
+  display: grid;
+  grid-row-gap: 15px;
+}
+.info__pessoais h2, .info__pessoais h3 {
+  text-align: center;
+}
+
+.info__pagamento {
+  display: grid;
+  grid-row-gap: 15px;
+}
+.info__pagamento h2, .info__pagamento h3 {
+  text-align: center;
+}
+
 .product--list {
   display: grid;
   grid-template-columns: auto auto auto;

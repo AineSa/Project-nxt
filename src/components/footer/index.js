@@ -11,13 +11,13 @@ class Footer extends React.Component {
                     <h3 className='rodape__infor__title'>
                         VAMOS CONVERSAR?
                     </h3>
-                    <PhoneIcon fontSize='small'/>
+                    <PhoneIcon fontSize='small' />
                     <span className='rodape__infor_text'>(81) 98260-6725</span>
 
-                    <EmailIcon fontSize='small'/>
+                    <EmailIcon fontSize='small' />
                     <span className='rodape__infor_text'>pedido@cactus.com.br</span>
 
-                    <AccessTimeIcon fontSize='small'/>
+                    <AccessTimeIcon fontSize='small' />
                     <span className='rodape__infor_text'>
                         Atendimento: Segunda à sexta das 08:00 - 17:00</span>
 
