@@ -10,7 +10,6 @@ class Header extends React.Component {
             <section className="header">
                 <figure className='header__logo'>
                     <img className='header__img' src = {image} />
-                    <h1 className='header__text'>Clube dos Cactos</h1>
                 </figure>
                 
                 

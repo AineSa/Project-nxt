@@ -1,0 +1,17 @@
+.logo {
+    display: flex;
+    justify-content: space-between;
+
+    &__img {
+        width: 70px;
+    }
+
+    &__cart {
+        fill: transparent;
+
+        path {
+            stroke: black;
+            stroke-width: 2px;
+        }
+    }
+}

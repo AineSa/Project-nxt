@@ -1,0 +1,39 @@
+.product--list {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    padding: 10px;
+    grid-gap: 10px 10px;
+
+    &__itens {
+        display: flex;
+        padding: 20px;
+        text-align: center;
+        float: left;
+
+        &:hover .button {
+            opacity: 1;
+        }
+        .product--list__text {
+            font-size: 15px;
+            font-family: arial, sans-serif;
+            justify-content: center;
+            padding: 10px;
+            font-style: italic;
+        }
+        .product--list__preco {
+            display: block;
+            font-style: italic;
+        }
+        .button {
+            opacity: 0;
+        }
+    }
+
+    &__img {
+        width: 200px;
+        height: 200px;
+        flex: 0 0 200px;
+        border-radius: 10px;
+    }
+
+}

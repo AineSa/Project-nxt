@@ -17,16 +17,12 @@
   font-size: 2.5em;
 }
 
-body {
-  background-color: #f7f3f3;
-}
-
 .slide {
   display: flex;
 }
 .slide__image {
   width: 650px;
-  height: 300px;
+  height: 350px;
 }
 .slide__text {
   color: limegreen;
@@ -34,7 +30,142 @@ body {
   width: 35%;
   display: flex;
   flex-direction: column;
+  font-size: 18px;
+}
+.slide__button {
+  display: inline-block;
+}
+
+.image-section {
+  position: relative;
+}
+.image-section__img {
+  margin: 0;
+}
+.image-section__image {
+  transform: scaleX(-1);
+  width: 1255px;
+  height: 500px;
+  display: block;
+}
+.image-section__text {
+  position: absolute;
+  text-align: center;
+  top: 100px;
+  width: 650px;
   justify-content: space-between;
+}
+
+.obrigada {
+  position: relative;
+  display: inline-block;
+}
+.obrigada__img {
+  max-width: 100%;
+  margin: 10px;
+}
+.obrigada__text {
+  position: absolute;
+  text-align: right;
+  top: 100px;
+  width: 450px;
+}
+
+.product--list {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  padding: 10px;
+  grid-gap: 10px 10px;
+}
+.product--list__itens {
+  display: flex;
+  padding: 20px;
+  text-align: center;
+  float: left;
+}
+.product--list__itens:hover .button {
+  opacity: 1;
+}
+.product--list__itens .product--list__text {
+  font-size: 15px;
+  font-family: arial, sans-serif;
+  justify-content: center;
+  padding: 10px;
+  font-style: italic;
+}
+.product--list__itens .product--list__preco {
+  display: block;
+  font-style: italic;
+}
+.product--list__itens .button {
+  opacity: 0;
+}
+.product--list__img {
+  width: 200px;
+  height: 200px;
+  flex: 0 0 200px;
+  border-radius: 10px;
+}
+
+.button {
+  font-weight: 600;
+  color: #ebe4e3;
+  background-color: #24cc40;
+  padding: 10px;
+  text-decoration: none;
+  white-space: nowrap;
+  border-radius: 10px;
+  text-transform: uppercase;
+  font-size: 10px;
+  font-family: Arial;
+  display: block;
+  text-align: center;
+  margin: 2px;
+}
+
+.logo {
+  display: flex;
+  justify-content: space-between;
+}
+.logo__img {
+  width: 70px;
+}
+.logo__cart {
+  fill: transparent;
+}
+.logo__cart path {
+  stroke: black;
+  stroke-width: 2px;
+}
+
+.rodape__infor {
+  display: flex;
+  align-items: center;
+}
+.rodape__infor__title {
+  margin-right: 40px;
+}
+.rodape__infor .rodape__infor_text {
+  vertical-align: middle;
+  display: inline;
+  margin-right: 60px;
+}
+.rodape__message {
+  color: #7b7b7b;
+  display: block;
+  font: 400 12px/14px Montserrat, sans-serif;
+  margin: 0 auto;
+  padding: 10px;
+  text-align: center;
+  bottom: 0;
+}
+
+.h3 {
+  margin-left: 10px;
+}
+
+body {
+  background-color: #f3f3f3;
 }
 
 /*# sourceMappingURL=app.css.map */

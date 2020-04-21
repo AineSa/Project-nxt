@@ -1,0 +1,19 @@
+.obrigada{
+    position: relative;
+    display: inline-block;
+
+    &__img{
+        max-width: 100%;
+        margin: 10px;
+     //   margin-left: 35%;
+    }
+    &__text{
+        position: absolute;
+        text-align: right;
+        top: 100px;
+        width:450px;
+
+    }
+
+
+}

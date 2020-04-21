@@ -1,4 +1,11 @@
 @import url("https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300,300i,700&display=swap");
 @import "../styles/templates/header.scss";
-@import "general";
+@import "../styles/templates/slide-section.scss";
 @import "../styles/templates/image-section.scss";
+@import "../styles/templates/obrigada.scss";
+@import "../styles/componentes/product--list.scss";
+@import "../styles/componentes/button.scss";
+@import "../styles/componentes/logo.scss";
+@import "../styles/componentes/footer.scss";
+@import "general";
+@import "header";
