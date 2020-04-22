@@ -1,3 +1,4 @@
+@charset "UTF-8";
 @import url("https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300,300i,700&display=swap");
 .header {
   background-color: #f7f3f3;
@@ -71,20 +72,62 @@
   width: 450px;
 }
 
-.info__pessoais {
-  display: grid;
-  grid-row-gap: 15px;
-}
-.info__pessoais h2, .info__pessoais h3 {
-  text-align: center;
+.item1 {
+  grid-area: Nome;
 }
 
-.info__pagamento {
-  display: grid;
-  grid-row-gap: 15px;
+.item2 {
+  grid-area: Sobrenome;
 }
-.info__pagamento h2, .info__pagamento h3 {
+
+.item3 {
+  grid-area: CPF;
+}
+
+.item4 {
+  grid-area: Email;
+}
+
+.item5 {
+  grid-area: Logradouro;
+}
+
+.item6 {
+  grid-area: Complemento;
+}
+
+.item7 {
+  grid-area: N°;
+}
+
+.item8 {
+  grid-area: Bairro;
+}
+
+.item9 {
+  grid-area: CEP;
+}
+
+.item10 {
+  grid-area: Cidade;
+}
+
+.item11 {
+  grid-area: Estado;
+}
+
+.item12 {
+  grid-area: Telefone;
+}
+
+.cadastro--info {
   text-align: center;
+}
+.cadastro--info__pessoais {
+  display: grid;
+  padding: 10px;
+  grid-gap: 10px 10px;
+  grid-template-areas: "Nome Nome Sobrenome Sobrenome" "CPF Telefone Email Email" "CEP Logradouro Logradouro Logradouro " "N° Complemento Bairro Bairro" "Cidade Cidade Estado Estado";
 }
 
 .product--list {
@@ -152,6 +195,7 @@
 .logo__cart path {
   stroke: black;
   stroke-width: 2px;
+  stroke-miterlimit: 10px;
 }
 
 .rodape__infor {

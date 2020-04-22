@@ -1,19 +1,35 @@
-.info__pessoais{
-    display: grid;
-    grid-row-gap: 15px;
-    h2,h3{
+.item1  { grid-area: Nome;}
+.item2  { grid-area: Sobrenome;}
+.item3  { grid-area: CPF;}
+.item4  { grid-area: Email;}
+.item5  { grid-area: Logradouro;}
+.item6  { grid-area: Complemento;}
+.item7  { grid-area: N°;}
+.item8  { grid-area: Bairro;}
+.item9  { grid-area: CEP;}
+.item10 { grid-area: Cidade;}
+.item11 { grid-area: Estado;}
+.item12 { grid-area: Telefone;}
+
+
+
+.cadastro--info {
         text-align: center;
+
+
+    &__pessoais {
+        display: grid;
+        padding: 10px;
+        grid-gap: 10px 10px;
+        grid-template-areas:
+        'Nome Nome Sobrenome Sobrenome'
+        'CPF Telefone Email Email'
+        'CEP Logradouro Logradouro Logradouro '
+        'N° Complemento Bairro Bairro'
+        'Cidade Cidade Estado Estado'
+        ;
+        
     }
+
 }
-
-.info__pagamento{
-    display: grid;
-    grid-row-gap: 15px;
-    h2,h3{
-        text-align: center;
-    }
-}
-
-
-
 
