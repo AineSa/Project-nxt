@@ -29,49 +29,70 @@ class Cadastro extends Component {
     };
 
     validar() {
+        let erro = false;
         let novoValor = {
             ...this.state
         };
 
         if (this.state.nome.length < 3) {
+            erro = true;
             alert('Preencha o campo nome.');
         }
 
-        if (this.state.sobrenome === "") {
+        if (this.state.sobrenome.length < 3) {
+            erro = true;
             alert('Preencha o campo sobrenome.');
         }
 
-        if (this.state.cpf === "") {
-            alert('Preencha o campo CPF.');
+        if (this.state.cpf.length !==14) {
+            erro = true;
+            alert('Preencha o campo CPF com . e -');
         }
 
-        if (this.state.email === "") {
+        if (this.state.email.length < 4) {
+            erro = true;
             alert('Preencha o campo email.');
         }
-        if (this.state.logradouro === "") {
+        if (this.state.logradouro.length < 4) {
+            erro = true;
             alert('Preencha o campo logradouro.');
         }
         if (this.state.complemento === "") {
+            erro = true;
             alert('Preencha o campo complemento.');
         }
         if (this.state.numero === "") {
+            erro = true;
             alert('Preencha o campo numero.');
         }
-        if (this.state.bairro === "") {
+        if (this.state.bairro.length < 3) {
+            erro = true;
             alert('Preencha o campo bairro.');
         }
-        if (this.state.cep === "") {
+        if (this.state.cep.length !== 9) {
+            erro = true;
             alert('Preencha o campo cep.');
         }
-        if (this.state.cidade === "") {
+        if (this.state.cidade.length < 3 ) {
+            erro = true;
             alert('Preencha o campo cidade.');
         }
-        if (this.state.estado === "") {
-            alert('Preencha o campo estado.');
+        if (this.state.estado.length !==2) {
+            erro = true;
+            alert('Preencha o campo estado com apenas 2 letras.');
         }
-        if (this.state.telefone === "") {
-            alert('Preencha o campo telefone.');
+        if (this.state.telefone.length !==11) {
+            erro = true;
+            alert('Preencha o campo telefone com o DDD.');
         }
+
+        if (erro === false){
+
+            this.setState({
+                ...this.state,
+                redirect: true
+            });   
+    }
 
     }
 
@@ -85,20 +106,17 @@ class Cadastro extends Component {
 
 
     }
- 
+
+
 
     render() {
-        // this.setState({
-        //     ...this.state,
-        //     redirect: true
-        // });
 
-        // if (this.state.cadastroValidado) {
-        //     return (
-        //         <Redirect to='/obrigado'/>
-        //     );
-        // }
-
+        if (this.state.redirect) {
+            return (
+                <Redirect to='/obrigado'/>
+            );
+        }
+    
         return (
             <>
                 <Logo></Logo>
@@ -133,7 +151,7 @@ class Cadastro extends Component {
                                 label="CPF"
                                 name='cpf'
                                 placeholder='cpf'
-                                type='number'
+                                type='text'
                                 onChange={this.AtualizarState.bind(this)}
                                 value={this.state.cpf}
                             />
@@ -188,7 +206,7 @@ class Cadastro extends Component {
                                 label="CEP"
                                 name='cep'
                                 placeholder='cep'
-                                type='number'
+                                type='text'
                                 onChange={this.AtualizarState.bind(this)}
                                 value={this.state.cep}
                             />
@@ -215,20 +233,21 @@ class Cadastro extends Component {
                                 label="Telefone"
                                 name='telefone'
                                 placeholder='telefone'
-                                type='number'
+                                type='text'
                                 onChange={this.AtualizarState.bind(this)}
                                 value={this.state.telefone}
                             />
                         </div>
                     </div>
                 </form>
-                <input type="submit" onClick={this.validar.bind(this)}></input>
+                {/* <input type="submit" onClick={this.validar.bind(this)}></input> */}
                 {/* <a className='button' href='/obrigado'>
                         Cadastrar
 						   </a> */}
-                {/* <button className='button'>
-                    Cadastrar
-                </button> */}
+                <button type="submit" className='button'
+                onClick={this.validar.bind(this)} >
+                      Cadastrar
+                </button>
 
                 <Footer></Footer>
 
