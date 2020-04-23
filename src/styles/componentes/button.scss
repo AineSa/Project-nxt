@@ -12,5 +12,21 @@
     display: block;
     text-align: center;
     margin: 2px;
+
+    &__cadastro{
+        display: flex;
+        font-weight: 600;
+        color: #ebe4e3;
+        background-color: #24cc40;
+        padding: 10px;
+        text-decoration: none;
+        white-space: nowrap;
+        border-radius: 10px;
+        text-transform: uppercase;
+        font-size: 10px;
+        font-family: Arial;
+        width: 65px;
+        margin-left: auto;
+    }
 }
 

@@ -6,7 +6,7 @@ import ImageSection from '../image-section/index.js';
 import Footer from '../footer/index.js';
 
 
-import img from '../../assets/cacto5.jpg';
+import img from '../../assets/cacto10.jpg';
 
 class Home extends Component {
 

@@ -1,17 +1,29 @@
-.obrigada{
+.obrigada{   
     position: relative;
-    display: inline-block;
+    &__logo{
+        margin: 0;
+    }
 
     &__img{
-        max-width: 100%;
-        margin: 10px;
-     //   margin-left: 35%;
+    
+        width: 100%;
+        display: block;
     }
-    &__text{
+    &__text__span{
+        right:130px;
+        top: 10%;
+        bottom: 10%;
         position: absolute;
-        text-align: right;
-        top: 100px;
-        width:450px;
+        font-size: 20px;
+        margin-left: auto;
+
+    }
+
+    &__text{
+        right:130px;
+        top: 10%;
+        bottom: 10%;
+        position: absolute;
 
     }
 

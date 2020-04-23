@@ -57,10 +57,6 @@ class Cadastro extends Component {
             erro = true;
             alert('Preencha o campo logradouro.');
         }
-        if (this.state.complemento === "") {
-            erro = true;
-            alert('Preencha o campo complemento.');
-        }
         if (this.state.numero === "") {
             erro = true;
             alert('Preencha o campo numero.');
@@ -240,14 +236,10 @@ class Cadastro extends Component {
                         </div>
                     </div>
                 </form>
-                {/* <input type="submit" onClick={this.validar.bind(this)}></input> */}
-                {/* <a className='button' href='/obrigado'>
-                        Cadastrar
-						   </a> */}
-                <button type="submit" className='button'
+                <a type="submit" className='button__cadastro'
                 onClick={this.validar.bind(this)} >
                       Cadastrar
-                </button>
+                </a>
 
                 <Footer></Footer>
 

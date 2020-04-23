@@ -4,7 +4,7 @@ import image1 from '../../assets/cacto2.jpg';
 import image2 from '../../assets/cacto3.jpg';
 
 let i = 0;
-let imgarray = [];
+let imgArray = [];
 
 class SlideSection extends React.Component{
 
@@ -19,18 +19,17 @@ class SlideSection extends React.Component{
 
 	carregaImagem(){
 
-		imgarray.push(image);
-		imgarray.push(image1);
-		imgarray.push(image2);
+		imgArray.push(image);
+		imgArray.push(image1);
+		imgArray.push(image2);
 	
 		let changeImg = () =>{
-			//document.slide.src = imgarray[i];
 
 			this.setState({
-				slider: imgarray[i]
+				slider: imgArray[i]
 			});
 	
-			if(i < imgarray.length - 1){
+			if(i < imgArray.length - 1){
 				i++;
 			} else {
 				i = 0;
