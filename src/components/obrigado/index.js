@@ -17,7 +17,7 @@ class Obrigado extends React.Component {
             this.setState({
                 redirect: true
             });
-        }, 500000);
+        }, 1000000);
     }
 
     
@@ -39,8 +39,12 @@ class Obrigado extends React.Component {
                     <span className='obrigada__text__span'>
                         Agradecemos o seu interesse nos nossos cactos. 
                         <br/>Em breve entraremos em contato com seu orçamento.
+                        <a className='button__obrigado' href='/'>
+                            Voltar para a home
+					    </a>    
                     </span>
-                    {/* <h1 className='obrigada__text'>Obrigada!</h1> */}
+
+
                 </div>
                 
                 <Footer></Footer>
