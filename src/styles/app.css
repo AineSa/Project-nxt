@@ -83,56 +83,45 @@
   position: absolute;
 }
 
-.item1 {
-  grid-area: Nome;
-}
-
-.item2 {
-  grid-area: Sobrenome;
-}
-
-.item3 {
-  grid-area: CPF;
-}
-
-.item4 {
-  grid-area: Email;
-}
-
-.item5 {
-  grid-area: Logradouro;
-}
-
-.item6 {
-  grid-area: Complemento;
-}
-
-.item7 {
-  grid-area: N°;
-}
-
-.item8 {
-  grid-area: Bairro;
-}
-
-.item9 {
-  grid-area: CEP;
-}
-
-.item10 {
-  grid-area: Cidade;
-}
-
-.item11 {
-  grid-area: Estado;
-}
-
-.item12 {
-  grid-area: Telefone;
-}
-
 .cadastro--info {
   text-align: center;
+  grid-row-gap: 20px;
+}
+.cadastro--info .item1 {
+  grid-area: Nome;
+}
+.cadastro--info .item2 {
+  grid-area: Sobrenome;
+}
+.cadastro--info .item3 {
+  grid-area: CPF;
+}
+.cadastro--info .item4 {
+  grid-area: Email;
+}
+.cadastro--info .item5 {
+  grid-area: Logradouro;
+}
+.cadastro--info .item6 {
+  grid-area: Complemento;
+}
+.cadastro--info .item7 {
+  grid-area: N°;
+}
+.cadastro--info .item8 {
+  grid-area: Bairro;
+}
+.cadastro--info .item9 {
+  grid-area: CEP;
+}
+.cadastro--info .item10 {
+  grid-area: Cidade;
+}
+.cadastro--info .item11 {
+  grid-area: Estado;
+}
+.cadastro--info .item12 {
+  grid-area: Telefone;
 }
 .cadastro--info__pessoais {
   display: grid;
@@ -152,23 +141,34 @@
   padding: 20px;
   text-align: center;
   float: left;
+  border: 2px solid green;
+  border-radius: 35px;
 }
 .product--list__itens:hover .button {
   opacity: 1;
 }
-.product--list__itens .product--list__text {
-  font-size: 15px;
+.product--list__text {
+  font-size: 20px;
   font-family: arial, sans-serif;
   justify-content: center;
   padding: 10px;
   font-style: italic;
+  font-weight: bold;
+  position: relative;
+  left: 8%;
+  margin: 0;
 }
-.product--list__itens .product--list__preco {
+.product--list__preco {
   display: block;
-  font-style: italic;
+  font-size: 25px;
 }
-.product--list__itens .button {
+.product--list .button {
   opacity: 0;
+  position: relative;
+  left: 25%;
+  top: 10%;
+  width: 190px;
+  font-size: 15px;
 }
 .product--list__img {
   width: 200px;
@@ -204,7 +204,7 @@
   text-transform: uppercase;
   font-size: 10px;
   font-family: Arial;
-  width: 65px;
+  width: 125px;
   margin-left: auto;
 }
 .button__obrigado {

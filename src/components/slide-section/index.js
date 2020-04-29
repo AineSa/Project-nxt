@@ -2,6 +2,7 @@ import React from 'react';
 import image from '../../assets/cacto.jpg';
 import image1 from '../../assets/cacto2.jpg';
 import image2 from '../../assets/cacto3.jpg';
+import { Link } from 'react-router-dom';
 
 let i = 0;
 let imgArray = [];
@@ -54,9 +55,10 @@ class SlideSection extends React.Component {
 				<ul className='slide__text'>
 					<li>Escolha seu cacto, adicione no carrinho e no final preencha os seus dados , em breve responderemos com seu orçamento.</li>
 					<li>As plantas vão desenvasadas e são enviadas por correio, dentro de cada frete minimo cabem ate 15 plantas.</li>
-					<a className='button' href='/produtos'>
-						Veja nossos produtos aqui
-						</a>
+					
+					<Link className='button' to='/produtos'>
+						Veja nossos produtos
+					</Link>
 				</ul>
 			</section>
 

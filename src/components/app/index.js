@@ -5,6 +5,8 @@ import Obrigado from '../obrigado';
 import Cadastro from '../cadastro';
 import Produtos from '../produtos'
 
+import Footer from '../footer/index.js';
+
 import {
   BrowserRouter,
   Switch,
@@ -18,7 +20,6 @@ class App extends React.Component{
       <>
       <div>
         <BrowserRouter>
-                  
           <Switch>
             <Route exact path='/' component={Home} />
             <Route path='/obrigado' component={Obrigado} />
@@ -37,7 +38,7 @@ class App extends React.Component{
               </center>
             </Route>
           </Switch>
-          
+          <Footer />
         </BrowserRouter>
       </div>
 

@@ -1,9 +1,9 @@
 import React, { Component } from 'react';
 import Logo from '../logo';
-import Footer from '../footer/index.js';
 import fim from '../../assets/cacto8.jpg';
 
 
+// import Footer from '../footer/index.js';
 
 
 class Obrigado extends React.Component {
@@ -14,7 +14,7 @@ class Obrigado extends React.Component {
         return (
             <>
 
-                <Logo></Logo>
+                <Logo />
                 <div className="obrigada" >
 
                     <figure className='obrigada__logo'>
@@ -27,12 +27,7 @@ class Obrigado extends React.Component {
                             Voltar para a home
 					    </a>
                     </span>
-
-
                 </div>
-
-                <Footer></Footer>
-
             </>
         );
     }

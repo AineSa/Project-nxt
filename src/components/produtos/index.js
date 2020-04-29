@@ -1,4 +1,7 @@
 import React, { Component } from 'react';
+
+import { Link } from 'react-router-dom';
+
 import image1 from '../../assets/agave_pototarum_cv_variegata.jpg';
 import image2 from '../../assets/Astrophytum_myriostigma_yoroi.jpg';
 import image3 from '../../assets/Discocactus_cephaliaciculosus.jpg';
@@ -9,131 +12,74 @@ import image7 from '../../assets/mammillaria_bombycina.jpg';
 import image8 from '../../assets/stenocactus_phyllacanthus.jpg';
 import image9 from '../../assets/thelocactus_setispinus.jpg';
 
+import Produto from '../produtos/produtos.js';
+
 import Logo from '../logo';
-import Footer from '../footer/index.js';
+// import Footer from '../footer/index.js';
 
 class Produtos extends Component {
 
-   // carregarPagina(e){
-   // 	window.location.href = "/obrigado"
-   // }
    render() {
       return (
-
          <>
-            <Logo></Logo>
+            <Logo />
             <div className='product--list'>
-               <div className='product--list__itens'>
-                  <img className='product--list__img' src={image1} ></img>
-                  <div>
-                     <p className='product--list__text'>Agave pototarum cv variegata
-                               <span className='product--list__preco'>R$38.00</span>
-                     </p>
-                     <a className='button' href='/cadastro'>
-                        Adicionar ao carrinho
-						   </a>
-                  </div>
-               </div>
 
-               <div className='product--list__itens'>
-                  <img className='product--list__img' src={image2}></img>
-                  <div>
-                     <p className='product--list__text'>Astrophytum myriostigma yoroi
-                        <span className='product--list__preco'>R$250.00</span>
-                     </p>
-                     <a className='button' href='/cadastro'>
-                        Adicionar ao carrinho
-						   </a>
-                  </div>
-               </div>
+               <Produto
+                  image={image1}
+                  titulo='Agave pototarum cv variegata'
+                  valor='R$38.00'
+               />
 
-               <div className='product--list__itens'>
-                  <img className='product--list__img' src={image3}></img>
-                  <div>
-                     <p className='product--list__text'>Discocactus cephaliaciculosus
-                        <span className='product--list__preco'>R$38.00</span>
-                     </p>
-                     <a className='button' href='/cadastro'>
-                        Adicionar ao carrinho
-						   </a>
-                  </div>
-               </div>
+               <Produto
+                  image={image2}
+                  titulo='Astrophytum myriostigma yoroi'
+                  valor='R$250.00'
+               />
 
-               <div className='product--list__itens'>
-                  <img className='product--list__img' src={image4} ></img>
-                  <div>
-                     <p className='product--list__text'>Discocactus latispinus
-                        <span className='product--list__preco'>R$38.00</span>
-                     </p>
-                     <a className='button' href='/cadastro'>
-                        Adicionar ao carrinho
-						   </a>
-                  </div>
-               </div>
+               <Produto
+                  image={image3}
+                  titulo='Discocactus cephaliaciculosus'
+                  valor='R$38.00'
+               />
 
-               <div className='product--list__itens'>
-                  <img className='product--list__img' src={image5}></img>
-                  <div>
-                     <p className='product--list__text'>Euphorbia Meloformis
-                        <span className='product--list__preco'>R$135.00</span>
-                     </p>
-                     <a className='button' href='/cadastro'>
-                        Adicionar ao carrinho
-						   </a>
-                  </div>
-               </div>
+               <Produto
+                  image={image4}
+                  titulo='Discocactus latispinus'
+                  valor='R$38.00'
+               />
 
-               <div className='product--list__itens'>
-                  <img className='product--list__img' src={image6}></img>
-                  <div>
-                     <p className='product--list__text'>Frailea Mammifera
-                        <span className='product--list__preco'>R$20.00</span>
-                     </p>
-                     <a className='button' href='/cadastro'>
-                        Adicionar ao carrinho
-						   </a>
-                  </div>
-               </div>
+               <Produto
+                  image={image5}
+                  titulo='Euphorbia Meloformis'
+                  valor='R$135.00'
+               />
 
-               <div className='product--list__itens'>
-                  <img className='product--list__img' src={image7} ></img>
-                  <div>
-                     <p className='product--list__text'>Mammillaria bombycina
-                        <span className='product--list__preco'>R$39.00</span>
-                     </p>
-                     <a className='button' href='/cadastro'>
-                        Adicionar ao carrinho
-						   </a>
-                  </div>
-               </div>
+               <Produto
+                  image={image6}
+                  titulo='Frailea Mammifera'
+                  valor='R$20.00'
+               />
 
-               <div className='product--list__itens'>
-                  <img className='product--list__img' src={image8}></img>
-                  <div>
-                     <p className='product--list__text'>Stenocactus phyllacanthus
-                        <span className='product--list__preco'>R$120.00</span>
-                     </p>
-                     <a className='button' href='/cadastro'>
-                        Adicionar ao carrinho
-						   </a>
-                  </div>
-               </div>
+               <Produto
+                  image={image7}
+                  titulo='Mammillaria bombycina'
+                  valor='R$39.00'
+               />
 
-               <div className='product--list__itens'>
-                  <img className='product--list__img' src={image9}></img>
-                  <div>
-                     <p className='product--list__text'>Thelocactus setispinus
-                        <span className='product--list__preco'>R$35.00</span>
-                     </p>
-                     <a className='button' href='/cadastro'>
-                        Adicionar ao carrinho
-						   </a>
-                  </div>
-               </div>
+               <Produto
+                  image={image8}
+                  titulo='Stenocactus phyllacanthus'
+                  valor='R$120.00'
+               />
 
+               <Produto
+                  image={image9}
+                  titulo='Thelocactus setispinus'
+                  valor='R$35.00'
+               />
             </div>
-            <Footer></Footer> 
-         </> 
+         </>
       );
    }
 }

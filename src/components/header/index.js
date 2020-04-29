@@ -11,8 +11,6 @@ class Header extends React.Component {
                 <figure className='header__logo'>
                     <img className='header__img' src = {image} />
                 </figure>
-                
-                
             </section>
         );
     }

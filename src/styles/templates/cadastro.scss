@@ -1,21 +1,19 @@
-.item1  { grid-area: Nome;}
-.item2  { grid-area: Sobrenome;}
-.item3  { grid-area: CPF;}
-.item4  { grid-area: Email;}
-.item5  { grid-area: Logradouro;}
-.item6  { grid-area: Complemento;}
-.item7  { grid-area: N°;}
-.item8  { grid-area: Bairro;}
-.item9  { grid-area: CEP;}
-.item10 { grid-area: Cidade;}
-.item11 { grid-area: Estado;}
-.item12 { grid-area: Telefone;}
-
-
-
 .cadastro--info {
         text-align: center;
-
+        grid-row-gap: 20px;
+        
+        .item1  { grid-area: Nome;}
+        .item2  { grid-area: Sobrenome;}
+        .item3  { grid-area: CPF;}
+        .item4  { grid-area: Email;}
+        .item5  { grid-area: Logradouro;}
+        .item6  { grid-area: Complemento;}
+        .item7  { grid-area: N°;}
+        .item8  { grid-area: Bairro;}
+        .item9  { grid-area: CEP;}
+        .item10 { grid-area: Cidade;}
+        .item11 { grid-area: Estado;}
+        .item12 { grid-area: Telefone;}
 
     &__pessoais {
         display: grid;
@@ -30,6 +28,6 @@
         ;
         
     }
-
+    
+    
 }
-

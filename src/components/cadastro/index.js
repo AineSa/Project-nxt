@@ -1,14 +1,11 @@
 import React, { Component } from 'react';
 import TextField from '@material-ui/core/TextField';
-import Button from '@material-ui/core/Button';
+import SaveIcon from '@material-ui/icons/Save';
 
 import Logo from '../logo';
-import Footer from '../footer/index.js';
+// import Footer from '../footer/index.js';
 
-import {
-    Redirect,
-    Link
-} from 'react-router-dom';
+import { Redirect, Link } from 'react-router-dom';
 
 class Cadastro extends Component {
 
@@ -44,7 +41,7 @@ class Cadastro extends Component {
             alert('Preencha o campo sobrenome.');
         }
 
-        if (this.state.cpf.length !==14) {
+        if (this.state.cpf.length !== 14) {
             erro = true;
             alert('Preencha o campo CPF com . e -');
         }
@@ -69,26 +66,26 @@ class Cadastro extends Component {
             erro = true;
             alert('Preencha o campo cep.');
         }
-        if (this.state.cidade.length < 3 ) {
+        if (this.state.cidade.length < 3) {
             erro = true;
             alert('Preencha o campo cidade.');
         }
-        if (this.state.estado.length !==2) {
+        if (this.state.estado.length !== 2) {
             erro = true;
             alert('Preencha o campo estado com apenas 2 letras.');
         }
-        if (this.state.telefone.length !==11) {
+        if (this.state.telefone.length !== 11) {
             erro = true;
             alert('Preencha o campo telefone com o DDD.');
         }
 
-        if (erro === false){
+        if (erro === false) {
 
             this.setState({
                 ...this.state,
                 redirect: true
-            });   
-    }
+            });
+        }
 
     }
 
@@ -109,15 +106,13 @@ class Cadastro extends Component {
 
         if (this.state.redirect) {
             return (
-                <Redirect to='/obrigado'/>
+                <Redirect to='/obrigado' />
             );
         }
-    
+
         return (
             <>
                 <Logo></Logo>
-                <form >
-
                     <div className='cadastro--info'>
                         <h2>Preencha seu Cadastro</h2>
                         <legend>Dados Pessoais</legend>
@@ -133,6 +128,7 @@ class Cadastro extends Component {
                                 value={this.state.nome}
 
                             />
+
                             <TextField
                                 className='item2'
                                 label="Sobrenome"
@@ -235,16 +231,13 @@ class Cadastro extends Component {
                             />
                         </div>
                     </div>
-                </form>
-                <a type="submit" className='button__cadastro'
-                onClick={this.validar.bind(this)} >
-                      Cadastrar
-                </a>
-
-                <Footer></Footer>
-
+                <button
+                    className='button__cadastro'
+                    onClick={this.validar.bind(this)}
+                >
+                    Cadastrar
+                </button>
             </>
-
         );
     }
 }

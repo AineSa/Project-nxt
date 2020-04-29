@@ -3,8 +3,6 @@ import React, { Component } from 'react';
 import Header from '../header/index.js';
 import SlideSection from '../slide-section/index.js';
 import ImageSection from '../image-section/index.js';
-import Footer from '../footer/index.js';
-
 
 import img from '../../assets/cacto10.jpg';
 
@@ -18,7 +16,7 @@ class Home extends Component {
                 <ImageSection 
                     background={img}
                     />
-                <Footer></Footer>
+                {/* <Footer></Footer> */}
             </>
         );
     }
